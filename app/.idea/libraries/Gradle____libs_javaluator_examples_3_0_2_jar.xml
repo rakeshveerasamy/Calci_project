@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="Gradle: ./libs/javaluator-examples-3.0.2.jar">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/libs/javaluator-examples-3.0.2.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -1,0 +1,144 @@
+<resources>
+    <string name="app_name">Calci</string>
+
+    <!--scientific calculator-->
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="no_text"> </string>
+    <string name="rcl">RCL</string>
+    <string name="sto">STO</string>
+    <string name="m_minus">M-</string>
+    <string name="shift">SHIFT</string>
+    <string name="rad">RAD</string>
+    <string name="abs">ABS</string>
+    <string name="mr">MR</string>
+    <string name="ms">MS</string>
+    <string name="m_plus">M+</string>
+    <string name="inverse_sin">sin1</string>
+    <string name="inverse_cos">cos1</string>
+    <string name="inverse_tan">tan1</string>
+    <string name="expo">ex</string>
+    <string name="ten_power">10x</string>
+    <string name="rnd">rnd</string>
+    <string name="sin_sign">sin</string>
+    <string name="cos_sign">cos</string>
+    <string name="tan_sign">tan</string>
+    <string name="natural_log">ln</string>
+    <string name="log">log</string>
+    <string name="cube_root">\u221Bx</string>
+    <string name="cube">x^3</string>
+    <string name="one_over_x">1/x</string>
+    <string name="x_power_y">Yx</string>
+    <string name="square_root">√</string>
+    <string name="x_square">x^2</string>
+    <string name="percent">%</string>
+    <string name="open_bracket">(</string>
+    <string name="close_bracket">)</string>
+    <string name="seven_button">7</string>
+    <string name="eight_button">8</string>
+    <string name="nine_button">9</string>
+    <string name="single_delete">DEL</string>
+    <string name="clear">AC</string>
+    <string name="factorial">n!</string>
+    <string name="combination">c(n,r)</string>
+    <string name="permutation">p(n,r)</string>
+    <string name="rate">Rate</string>
+    <string name="four_button">4</string>
+    <string name="five_button">5</string>
+    <string name="six_button">6</string>
+    <string name="multiplication">x</string>
+    <string name="division">/</string>
+    <string name="pi">π</string>
+    <string name="e">e</string>
+    <string name="comma">,</string>
+    <string name="one_button">1</string>
+    <string name="two_button">2</string>
+    <string name="three_button">3</string>
+    <string name="addition">+</string>
+    <string name="subtraction">-</string>
+    <string name="zero_button">0</string>
+    <string name="dot">.</string>
+    <string name="exp">exp</string>
+    <string name="ans">Ans</string>
+    <string name="equal_sign">=</string>
+    <string name="x_value">x</string>
+    <string name="plus_minus">+/-</string>
+    <string name="plot">Plot</string>
+    <string name="asterisk">*</string>
+
+    <!--matrix-calculator-->
+    <string name="matrA">Matrix A</string>
+    <string name="matrB">Matrix B</string>
+    <string name="set">Set</string>
+    <string name="rows">Rows</string>
+    <string name="cols">Cols</string>
+    <string name="result">Result C:</string>
+
+    <!--Operation button strings-->
+    <string name="add">A + B</string>
+    <string name="subtract">A - B</string>
+    <string name="subtract2">B - A</string>
+    <string name="multiply">A * B</string>
+    <string name="multiply2">B * A</string>
+
+    <string name="swap1">Swap A B</string>
+    <string name="swap2">Swap B C</string>
+    <string name="swap3">Swap A C</string>
+    <string name="inv">Inverse</string>
+    <string name="trans">Transpose</string>
+    <string name="scalar">Scale</string>
+
+    <string name="det">Det</string>
+    <string name="rank">Rank</string>
+
+
+    <!-- Error strings-->
+    <string name="sizeInvalid">Matrix size invalid.</string>
+    <string name="wrongSize">Matrices must be of the same size to perform this operation.</string>
+    <string name="mulFail">Columns of matrix 1 should equal rows of matrix 2.</string>
+    <string name="missingCells">Fill in all cells before performing an operation.</string>
+    <!--Age calculator-->
+    <string name="age_calculator_text">Age Calculator</string>
+    <string name="enter_your_age_in_years_text">Enter your age in years</string>
+    <string name="calculate_text">Calculate!</string>
+    <string name="your_age_results_text">Your Age Results!</string>
+
+    <!--Converter-->
+    <string-array name="area">
+        <item>Sq. Millimeter</item>
+        <item>Sq. Centimeter</item>
+        <item>Sq Meter</item>
+        <item>Sq. Kilometer</item>
+        <item>Acre</item>
+        <item>Hectare</item>
+    </string-array>
+
+    <string-array name="length">
+        <item>Nanometer</item>
+        <item>Millimeter</item>
+        <item>Centimeter</item>
+        <item>Meter</item>
+        <item>Kilometer</item>
+        <item>Inches</item>
+        <item>Foot</item>
+        <item>Yards</item>
+        <item>Mile</item>
+    </string-array>
+
+    <string-array name="temperature">
+        <item>Celsius</item>
+        <item>Farenheit</item>
+        <item>Kelvin</item>
+    </string-array>
+
+    <string-array name="weight">
+        <item>Milligrams</item>
+        <item>Centigrams</item>
+        <item>Decigrams</item>
+        <item>Grams</item>
+        <item>Kilograms</item>
+        <item>Metric tonnes</item>
+        <item>Pounds</item>
+        <item>Ounces</item>
+    </string-array>
+</resources>
