@@ -96,10 +96,7 @@ public class matrixCalculatorActivity extends AppCompatActivity {
         setMatrixSize(matrixB, ROW_DEFAULT, COL_DEFAULT);
         setMatrixSize(matrixC, ROW_DEFAULT, COL_DEFAULT);
     }
-    /**
-     * Initialize blank matrices of default size when starting app
-     * @param hasFocus
-     */
+    
     @Override
     public void onWindowFocusChanged(boolean hasFocus) {
 
@@ -152,11 +149,10 @@ public class matrixCalculatorActivity extends AppCompatActivity {
                 setMatrixSize(matrixB, inputToInt(rowB.getText().toString()),
                         inputToInt(colB.getText().toString()));
                 if(notEmpty){
-                    //int oldr = old.getRows();
-                    //int oldc = old.getCols();
+                    
                     Matrix sizeAdjust = old.changeDimensions(inputToInt(rowB.getText().toString()), inputToInt(colB.getText().toString()));
                     displayResult(sizeAdjust, matrixB);
-                    //clearRows(matrixA, oldr, sizeAdjust.getRows() );
+                   
                 }
             }
         });
@@ -428,13 +424,7 @@ public class matrixCalculatorActivity extends AppCompatActivity {
             }
         });
     }
-    /**
-     * Set matrix size. Generate/edit corresponding gridlayout and
-     * edit text cells.
-     * @param m - matrix (see above constants)
-     * @param r - rows
-     * @param c - cols
-     */
+    
     private void setMatrixSize(MatrixView m, int r, int c){
         int rows = r;
         int cols = c;
@@ -474,18 +464,7 @@ public class matrixCalculatorActivity extends AppCompatActivity {
             e.setInputType(InputType.TYPE_NUMBER_FLAG_DECIMAL | InputType.TYPE_NUMBER_FLAG_SIGNED | InputType.TYPE_CLASS_NUMBER);
 
             int colWidth = gridWidth/cols; // set min width of columns
-            e.setMinimumWidth(colWidth);
-
-            // hide keyboard since the focus change doesn't work as I'd like right now
-            /*e.setOnFocusChangeListener(new View.OnFocusChangeListener() {
-                @Override
-                public void onFocusChange(View v, boolean hasFocus) {
-                    InputMethodManager imm =  (InputMethodManager) getSystemService(Context.INPUT_METHOD_SERVICE);
-                    imm.hideSoftInputFromWindow(v.getWindowToken(), 0);
-                }
-            });*/
-
-
+            e.setMinimumWidth(colWidth)
             cells.add(e); // store reference to each cell in the array
             matrixGrid.addView(e); // add to View
 
@@ -494,11 +473,6 @@ public class matrixCalculatorActivity extends AppCompatActivity {
 
 
     }
-    /**
-     * Get user input values from TextView fields to separate Matrix from Views.
-     * @param input List of TextView fields (so can be used in more situations)
-     * @return ArrayList<Double> of values from text fields. Null if there are empty text fields.
-     */
     private ArrayList<Double> userInputToValues(ArrayList<TextView> input){
         ArrayList<Double> values = new ArrayList<Double>();
         for(TextView t : input){
@@ -512,11 +486,7 @@ public class matrixCalculatorActivity extends AppCompatActivity {
         return values;
     }
 
-    /**
-     * Check if a matrix has empty cells
-     * @param m
-     * @return
-     */
+  
     private boolean hasEmptyCell(MatrixView m){
 
         for(TextView t : m.getCells() ){
@@ -530,12 +500,7 @@ public class matrixCalculatorActivity extends AppCompatActivity {
 
 
 
-    /**
-     * Converts  input by user from string to int, also validating input >= 0
-     * since used in generating matrix dimensions.
-     * @param input String input by user to convert
-     * @return int value of string if valid, otherwise -1
-     */
+   
     private int inputToInt(String input){
         int result;
         int i = Integer.parseInt(input);
@@ -547,11 +512,6 @@ public class matrixCalculatorActivity extends AppCompatActivity {
         }
         return result;
     }
-
-    /**
-     * method for making toasts
-     * @param s
-     */
     public void errorToast(String s){
         Toast t = Toast.makeText(this, s, Toast.LENGTH_SHORT);
         t.show();
@@ -595,11 +555,6 @@ public class matrixCalculatorActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * swap fields of matrixA and matrixB (note, could be matrix C too).
-     * @param a matrix
-     * @param b
-     */
     private void swap(MatrixView a, MatrixView b){
 
 
@@ -619,14 +574,7 @@ public class matrixCalculatorActivity extends AppCompatActivity {
 
     }
 
-    /**
-     * Set the cells of a matrix, given cell values in order, number of rows, and number of columns
-     * @param m which matrix
-     * @param cellValues values
-     * @param r rows
-     * @param c columns
-     * @precondition values.size() == r * c
-     */
+   
     private void setCells(MatrixView m, ArrayList<Double> cellValues, int r, int c){
         //TODO
         setMatrixSize(m, r, c); // set size
@@ -644,12 +592,7 @@ public class matrixCalculatorActivity extends AppCompatActivity {
 
 
 
-    /**
-     * Clear range of rows.
-     * @param m MatrixView to be cleared
-     * @param rstart start row index. inclusive
-     * @param rfinish end row index. exclusive
-     */
+    
     private void clearRows(MatrixView m, int rstart, int rfinish){
         GridLayout gl = m.getGridLayout();
         int c = gl.getColumnCount();
